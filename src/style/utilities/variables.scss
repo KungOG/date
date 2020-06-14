@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap");
+
+/////////////////////////////////
+// Colors
+/////////////////////////////////
+$color_red: #ff2323;
+$color_gold: #ecce66;
+$color_black: #000000;
+$color_white: #ffffff;
+
+/////////////////////////////////
+// Spacing
+/////////////////////////////////
+$space_xxLarge: 64px;
+$space_xLarge: 48px;
+$space_large: 36px;
+$space_medium: 24px;
+$space_base: 20px;
+$space_small: 16px;
+$space_xSmall: 8px;
+$space_xxSmall: 4px;
+$space_xxxSmall: 2px;
+
+$spacing_round_border: 999px;
+
+/////////////////////////////////
+// Typography
+/////////////////////////////////
+$primaryFont: "Dosis";
+$secondaryFont: sans-serif;
+$lineHeight: 1.5;
+$letter_spacing: 1.5px;
+
+$font_xxLarge: 70px;
+$font_xLarge: 48px;
+$font_large: 32px;
+$font_medium: 24px;
+$font_base: 20px;
+$font_small: 16px;
+$font_xSmall: 14px;
+$font_xxSmall: 10px;
+
+/////////////////////////////////
+// Animations
+/////////////////////////////////
+$speed: 0.3s;
