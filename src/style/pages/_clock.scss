@@ -17,7 +17,7 @@
       0px 0px 20px 20px rgba(255, 35, 35, 0.1),
       inset 0px 0px 20px 20px rgba(255, 35, 35, 0.1);
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       width: 15px;
@@ -32,6 +32,38 @@
   &__min,
   &__sec {
     position: absolute;
+
+    > #hr {
+      height: 160px;
+      width: 160px;
+
+      &::before {
+        width: 8px;
+        height: 80px;
+        background: rgba(255, 35, 35, 0.5);
+        z-index: 10;
+      }
+    }
+
+    > #mn {
+      height: 190px;
+      width: 190px;
+
+      &::before {
+        width: 4px;
+        height: 90px;
+      }
+    }
+
+    > #sc {
+      height: 230px;
+      width: 230px;
+
+      &::before {
+        width: 2px;
+        height: 150px;
+      }
+    }
   }
 
   &__hr,
@@ -39,48 +71,13 @@
   &__sc {
     display: flex;
     justify-content: center;
-  }
 
-  &__hr {
-    height: 160px;
-    width: 160px;
-
-    &:before {
+    &::before {
       content: "";
       position: absolute;
-      width: 8px;
-      height: 80px;
-      background: rgba(255, 35, 35, 0.5);
-      z-index: 10;
       border-radius: 6px 6px 0 0;
-    }
-  }
-  &__mn {
-    height: 190px;
-    width: 190px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 4px;
-      height: 90px;
       background: $color_gold;
       z-index: 11;
-      border-radius: 6px 6px 0 0;
-    }
-  }
-  &__sc {
-    height: 230px;
-    width: 230px;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 2px;
-      height: 150px;
-      background: $color_gold;
-      z-index: 11;
-      border-radius: 6px 6px 0 0;
     }
   }
 }
